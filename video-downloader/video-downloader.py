@@ -1,8 +1,7 @@
-from email import message
 from tkinter import *
 from tkinter import messagebox
 # importing the module 
-import pytube 
+from pytube import YouTube
 
 
 
@@ -10,9 +9,13 @@ import pytube
 #BUTTON COMMAND
 def downloadVideo():
     link = e.get()
-    yt = pytube.YouTube(link)
+    yt = YouTube(link)
     yt.streams.get_highest_resolution().download()
+<<<<<<< HEAD:GUI/gui.py
     mensaje = messagebox.showinfo("Status", "Video has been downloaded" )
+=======
+    messagebox.showinfo("Status", "Video has been downloaded" )
+>>>>>>> 175e43f5f56599996bd44e0bf7c951c43a5b3134:video-downloader/video-downloader.py
     
     
 
@@ -25,7 +28,7 @@ ventana.title("Video Downloader")
 ventana.configure(bg="#121212")
 
 #YOUTUBE LOGO
-imagen = PhotoImage(file="img/youtube_logo.png")
+imagen = PhotoImage(file="video-downloader/youtube_logo.png")
 my_label = Label(ventana, image=imagen, bd=0)
 my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
 
