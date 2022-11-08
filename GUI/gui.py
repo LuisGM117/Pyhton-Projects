@@ -13,7 +13,7 @@ def downloadVideo():
     yt = pytube.YouTube(link)
     yt.streams.get_highest_resolution().download()
     mensaje = messagebox.showinfo("Status", "Video has been downloaded" )
-    wait(50000)
+    
     
 
 
