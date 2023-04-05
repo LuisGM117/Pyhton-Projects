@@ -1,6 +1,6 @@
 # HIRST SPOT PAINTING
 
-![damien-hirst-painting](damien-hirst-Painting.png)
+![damien-hirst-painting](./damien-hirst-Painting.png)
 
 ## ABOUT
 
