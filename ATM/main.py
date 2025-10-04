@@ -9,6 +9,7 @@ def depositar_dinero(cantidad):
         print("Tiene que ser una cantidad postiva!")
     else:
         login.saldo += cantidad
+        login.cuentas[login.usuario]["saldo"] = login.saldo
         print("DEPOSITO EXITOSO")
         print("Tu saldo actual ahora es de:")
         print(f"${login.saldo}")
@@ -19,6 +20,7 @@ def retirar_dinero(cantidad):
         print("Fondos Insuficientes!")
     else:
         login.saldo -= cantidad
+        login.cuentas[login.usuario]["saldo"] = login.saldo
         print("RETIRO EXITOSO")
         print("Tu saldo actual ahora es de:")
         print(f"${login.saldo}")
@@ -34,6 +36,7 @@ def transferir_dinero(cuenta, cantidad):
     else:
         login.cuentas[cuenta]["saldo"] += cantidad
         login.saldo -= cantidad
+        login.cuentas[login.usuario]["saldo"] = login.saldo
         print("TRANSFERENCIA EXITOSA!")
         print("Tu saldo actual ahora es de: ")
         print(f"${login.saldo}")
