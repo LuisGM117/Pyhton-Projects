@@ -26,58 +26,53 @@ python --version
 ## 🚀 How to Run
 Clone the repository (or download the rpsg.py file):
 
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 ```
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+
 Navigate to the directory:
 
-Bash
+```bash
 cd your-repo-name
+```
+
 Run the game:
 
-Bash
+```bash
 python rpsg.py
-🕹️ How to Play
-Launch the script.
+```
 
-Enter your Name when prompted.
+## 🕹️ How to Play
+1. Launch the script.
+2. Enter your Name when prompted.
+3. Choose your weapon by typing the corresponding number:
+    * Type 1 for Rock 🪨
+    * Type 2 for Paper 📄
+    * Type 3 for Scissor ✂️
+4. The computer will reveal its choice.
 
-Choose your weapon by typing the corresponding number:
-
-Type 1 for Rock 🪨
-
-Type 2 for Paper 📄
-
-Type 3 for Scissor ✂️
-
-The computer will reveal its choice.
-
-Win Conditions:
-
-Rock crushes Scissors
-
-Scissors cuts Paper
-
-Paper covers Rock
+**Win Conditions:**
+* Rock crushes Scissors
+* Scissors cuts Paper
+* Paper covers Rock
 
 If it's a tie, the game restarts automatically!
-
-```
 
 ## 📂 Project Structure
 
 .
 ├── rpsg.py          # Main game script
 └── README.md        # Project documentation
-🛠️ Built With
+## 🛠️ Built With
 Python - Core logic
 
 Libraries used:
 
-random (for computer choice generation)
+**random** (for computer choice generation)
 
-time (for delays and suspense)
+**time** (for delays and suspense)
 
-os (for clearing the terminal screen)
+**os** (for clearing the terminal screen)
 
 ## 📝 License
 This project is open-source and available for use.
